@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide header__menu">
+                <div class="header__left" >
+                    <a class="header__logo" href="#">
+                        <img class="header__logo-img" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify Logo" width="50">
+                    </a>
+                    <a class="header__search">
+                        <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="header__search-input" placeholder="Bạn muốn phát nội dung gì?">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <div class="header__discover">
+                        <a href="#" class="header__discover-link">Khám phá Premium</a>
+                    </div>
+                    <div class="header__settingApp">
+                        <i class="header__settingApp-icon fa-solid fa-download"></i>
+                        <a href="" class="header__settingApp-link">Cài đặt ứng dụng</a>
+                    </div>
+                    <div class="header__account">
+                        <i class="header__account-bell fa-solid fa-bell"></i>
+                        <i class="header__account-users fa-solid fa-users"></i>
+                        <img src="./assets/img/IMG_0738.jpg" alt="User Avatar" class="header__account-avatar">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+           <div class="grid wide container__list">
+                <div class="artist">
+                    <div class="artist__library">
+                        <div class="artist__header">
+                            <i class="artist__header-icon fa-solid fa-chevron-left" id="artistIcon"></i>
+                            <span class="artist__text">Thư viện</span>
+                        </div>
+                        <div class="artist__icon">
+                            <i class="artist__icon-add fa-solid fa-plus"></i>
+                            <i class="artist__icon-expand fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </div>
+                    </div>
+                    <div class="artist__search">
+                        <i class="artist__search-icon fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="artist__search-input" placeholder="Tìm kiếm trong thư viện">
+                    </div>
+                    <ul class="artist__list">
+                        <li class="artist__item background" data-id="sonTung">
+                            <a class="artist__link">
+                                <div class="artist__img-wapper">
+                                    <img src="./assets/img/SƠN-TÙNG/son_tung.jpg" alt="Sơn Tùng M-TP " class="artist__img">
+                                    <i class="artist__play fa-solid fa-play"></i>
+                                </div>
+                                <div class="artist__profile">
+                                    <h2 class="artist__profile-header color">Sơn Tùng M-TP</h2>
+                                    <h3 class="artist__profile-body">Nghệ sĩ</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artist__item" data-id="jack">
+                            <a class="artist__link">
+                                <div class="artist__img-wapper">
+                                    <img src="./assets/img/Jack/jack.jpg" alt="Jack" class="artist__img">
+                                    <i class="artist__play fa-solid fa-play"></i>
+                                </div>
+                                <div class="artist__profile">
+                                    <h2 class="artist__profile-header">Jack - J97</h2>
+                                    <h3 class="artist__profile-body">Nghệ sĩ</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artist__item" data-id="denVau">
+                            <a class="artist__link">
+                                <div class="artist__img-wapper">
+                                    <img src="./assets/img/Đen-Vâu/den-vau.jpg" alt="Đen Vâu" class="artist__img">
+                                    <i class="artist__play fa-solid fa-play"></i>
+                                </div>
+                                <div class="artist__profile">
+                                    <h2 class="artist__profile-header">Đen Vâu</h2>
+                                    <h3 class="artist__profile-body">Nghệ sĩ</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artist__item" data-id="hoaMinzy">
+                            <a class="artist__link">
+                                <div class="artist__img-wapper">
+                                    <img src="./assets/img/HòaMinzy/hoa-minzy.webp" alt="Hòa Minzy" class="artist__img">
+                                    <i class="artist__play fa-solid fa-play"></i>
+                                </div>
+                                <div class="artist__profile">
+                                    <h2 class="artist__profile-header">Hòa Minzy</h2>
+                                    <h3 class="artist__profile-body">Nghệ sĩ</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artist__item" data-id="MCK">
+                            <a class="artist__link">
+                                <div class="artist__img-wapper">
+                                    <img src="./assets/img/MCK/mck.webp" alt="MCK" class="artist__img">
+                                    <i class="artist__play fa-solid fa-play"></i>
+                                </div>
+                                <div class="artist__profile">
+                                    <h2 class="artist__profile-header">MCK.</h2>
+                                    <h3 class="artist__profile-body">Nghệ sĩ</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="playlist">
+                    <div class="playlist__main">
+                        <div class="playlist__background">
+                            <img src="" alt="" class="playlist__background-img">
+                        </div>
+                        <div class="playlist__header">
+                            <i class="playlist__header-icon fa-solid fa-circle-play"></i>
+                            <h1 class="playlist__header-title"></h1>
+                        </div>
+                        <div class="playlist__body">
+                            <div class="playlist__body-list">
+                                <h2 class="playlist__body-popular">Phổ biến</h2>
+                                <ul class="playlist__body-ul"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="footer">
+            <div class="footer__left">
+                <img src="./assets/img/SƠN-TÙNG/chúng ta của hiện tại.jpg" alt="Chúng ta của hiện tại" class="footer__img">
+                <div class="footer__song">
+                    <h2 class="footer__title">Chúng ta của hiện tại</h2>
+                    <p class="footer__text">Sơn tùng M-TP</p>
+                </div>
+            </div>
+            <div class="footer__between">
+                <div class="footer__icon">
+                    <i class="footer__shuffle fa-solid fa-shuffle footer__shared"></i>
+                    <i class="footer__backward fa-solid fa-backward-step footer__shared"></i>
+                    <i class="footer__play fa-solid fa-circle-play"></i>
+                    <i class="footer__forward fa-solid fa-forward-step footer__shared"></i>
+                    <i class="footer__repeat fa-solid fa-repeat footer__shared"></i>
+                </div>
+                <div class="footer__input">
+                    <input type="range" min="0" max="100" value="0" step="1" class="footer__run" id="progress">
+                </div>
+            </div>
+             <div class="footer__right">
+                <div class="footer__loudspeaker">
+                    <i class="footer__volume fa-solid fa-volume-low"></i>
+                    <input type="range" value="0" step="1" min="0" max="100" class="footer__run-volume">
+                </div>
+            </div>
+        </div>
+
+        <audio id="audio" src=""></audio>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
